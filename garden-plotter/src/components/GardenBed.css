@@ -1,0 +1,19 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.bed {
+    width: 400px;
+    height: 800px;
+    display: grid;
+    grid-template-columns: repeat(48, 1fr);
+}
+
+.cell {
+    height: 10px;
+    width: 10px;
+    border: 1px solid;
+    display: grid;
+}
