@@ -10,9 +10,11 @@ export default function GardenBed() {
 
   const PLANTS = {
     "tomato": {
+      "name": "tomato",
       "spacing": 24,
     },
     "basil": {
+      "name": "basil",
       "spacing": 8,
     },
   }
@@ -34,7 +36,7 @@ export default function GardenBed() {
       || index % COLS > COLS - (plant.spacing / 2)
       || index / COLS < (plant.spacing / 2)
       || index / COLS > ROWS - (plant.spacing / 2)) {
-        //TODO ENTER ERROR CODE
+        alert(`you can't plant a ${plant.name} here. They have to be ${plant.spacing / 2} inches from the wall`)
     } else {
       let newBed = [...bed]
       let newPlantedValue = newBed[index].planted ? false : true
