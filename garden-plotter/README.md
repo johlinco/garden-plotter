@@ -1,3 +1,9 @@
+To start the app:
+
+1. cd into garden-plotter
+2. run npm install
+3. run npm start
+
 
 This project is set up to allow a user to plot their vegetables within a garden bed. 
 
